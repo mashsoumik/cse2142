@@ -1,6 +1,6 @@
 # CSE2142 Writing Professional Code Lab Exam 2022
 
-STEP #1.	Update code style for better consistency.
+STEP #1.	Update code style for better consistency.<be>
 STEP #2.	Application now terminates early if the number of arguments passed into it is wrong, fix it.
 STEP #3.	Makes improvements to variable names
 STEP #4.	Refactors duplicate file read and write logic into methods
