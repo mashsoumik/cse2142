@@ -1,4 +1,4 @@
-//STEP #1. Update code style for Better Consistancy
+//STEP #3. Makes improvements to variable names.
 
 import java.io.*;
 import java.text.*;
@@ -11,15 +11,17 @@ public class StudentList {
 
 
 
-//		Check arguments
+		Check arguments
 		if(args[0].equals("a")) {
 			System.out.println("Loading data ...");			
 			try {
 			BufferedReader s = new BufferedReader(
 					new InputStreamReader(
-							new FileInputStream("students.txt"))); 
-			String r = s.readLine();
-			String i[] = r.split(",");			
+							new FileInputStream("students.txt")));
+
+//change variable name here 
+			String readLine = s.readLine();
+			String input[] = r.split(",");			
 			for(String j : i) { System.out.println(j); }
 
 
@@ -33,11 +35,12 @@ public class StudentList {
 			try {
 			BufferedReader s = new BufferedReader(
 					new InputStreamReader(
-							new FileInputStream("students.txt"))); 
-			String r = s.readLine();
+							new FileInputStream("students.txt")));
+//change variable here 
+			String readLine = s.readLine();
 			System.out.println(r);
-			String i[] = r.split(",");	
-			Random x = new Random();
+			String inputString[] = r.split(",");	
+			Random random = new Random();
 				int y = x.nextInt();
 					System.out.println(i[y]);
 			} catch (Exception e){} 
@@ -51,7 +54,7 @@ public class StudentList {
 			BufferedWriter s = new BufferedWriter(
 					new FileWriter("students.txt", true));
 			String t = args[0].substring(1);
-	        Date d = new Date();
+	        Date newDate = new Date();
 	        String df = "dd/mm/yyyy-hh:mm:ss a";
 	        DateFormat dateFormat = new SimpleDateFormat(df);
 	        String fd= dateFormat.format(d);
