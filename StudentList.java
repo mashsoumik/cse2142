@@ -1,10 +1,15 @@
-//File Name Student.java
+//STEP #1. Update code style for Better Consistancy
 
 import java.io.*;
 import java.text.*;
 import java.util.*;
+
+
+
 public class StudentList {
 	public static void main(String[] args) {
+
+
 
 //		Check arguments
 		if(args[0].equals("a")) {
@@ -16,6 +21,9 @@ public class StudentList {
 			String r = s.readLine();
 			String i[] = r.split(",");			
 			for(String j : i) { System.out.println(j); }
+
+
+
 			} catch (Exception e){} 
 			System.out.println("Data Loaded.");
 		}
@@ -35,6 +43,8 @@ public class StudentList {
 			} catch (Exception e){} 
 			System.out.println("Data Loaded.");			
 		}
+
+
 		else if(args[0].contains("+")){
 			System.out.println("Loading data ...");			
 			try {
@@ -51,6 +61,9 @@ public class StudentList {
 							
 			System.out.println("Data Loaded.");	
 		}
+
+
+
 		else if(args[0].contains("?")) 
 		{
 			System.out.println("Loading data ...");			
@@ -82,13 +95,20 @@ public class StudentList {
 			char a[] = D.toCharArray();			
 			boolean in_word = false;
 			int count=0;
-			for(char c:a) {
+			for(char c:a)
+
+
+
+ {
 				if(c ==' ') 
 				{
 					if (!in_word) {	count++; in_word =true;	}
 					else { in_word=false;}			
 				}
 			}
+
+
+
 			System.out.println(count +" word(s) found " + a.length);
 			} catch (Exception e){} 
 			System.out.println("Data Loaded.");				
